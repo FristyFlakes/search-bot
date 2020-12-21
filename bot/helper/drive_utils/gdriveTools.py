@@ -130,7 +130,7 @@ class GoogleDriveHelper:
             self.telegraph_content.append(msg)
 
         if len(self.telegraph_content) == 0:
-            return "No Result Found :(", None
+            return "No Result Found For This Keyword ❌", None
 
         for content in self.telegraph_content :
             self.path.append(telegra_ph.create_page(title = 'Mirror Zone Search',
