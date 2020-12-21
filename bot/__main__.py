@@ -9,7 +9,7 @@ from .modules import authorize, list
 def start(update, context):
     LOGGER.info('UID: {} - UN: {} - MSG: {}'.format(update.message.chat.id,update.message.chat.username,update.message.text))
     if update.message.chat.type == "private" :
-        sendMessage(f"Hey <b>{update.message.chat.first_name}</b>. <b>I Can Search For Files In  Mirror Zone Database & Return A List Of Matching Files With Google Drive & Index Links.\n\n- Just Send Me The File Name.\n\nI Am Also Usable In Groups Just Add Me In Any Group & Send The Below Format 👇\n\n/search File Name..</b>", context.bot, update)
+        sendMessage(f"Hey <b>{update.message.chat.first_name}</b>. \n\n<b>I Can Search For Files In  Mirror Zone Database & Return A List Of Matching Files With Google Drive & Index Links.\n\n- Just Send Me The File Name.\n\nI Am Also Usable In Groups Just Add Me In Any Group & Send The Below Format 👇\n\n/search File Name..</b>", context.bot, update)
     else :
         sendMessage("Am alive :)", context.bot, update)
 
