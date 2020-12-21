@@ -140,7 +140,7 @@ class GoogleDriveHelper:
         if self.num_of_path > 1:
             self.edit_telegraph()
 
-        msg = f" Search Results For {fileName} 👇 "
+        msg = f" Search Results For {fileName} ⚠ "
         buttons = button_builder.ButtonMaker()   
         buttons.buildbutton("CLICK HERE", f"https://telegra.ph/{self.path[0]}")
 
